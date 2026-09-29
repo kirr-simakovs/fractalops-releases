@@ -1,0 +1,20 @@
+{
+  "room_id": "fractalops_system_updates",
+  "name": "FractalOps",
+  "messages": [
+    {
+      "id": "sys_1",
+      "timestamp": "2026-09-29T12:00:00Z",
+      "title": "Добро пожаловать в FractalOps!",
+      "text": "Это официальный канал обновлений. Здесь мы будем публиковать релизы новых версий, инструкции и предупреждения безопасности. Этот чат работает в режиме read-only.",
+      "link": "https://fractalops.ai"
+    },
+    {
+      "id": "sys_2",
+      "timestamp": "2026-09-29T12:30:00Z",
+      "title": "Релиз v4 (Windows)",
+      "text": "Вышла новая версия клиента под Windows. Исправлен баг 10054 (вылет при вставке картинок). Скачайте обновление по ссылке ниже.",
+      "link": "https://github.com/kirr-simakovs/dima_tipikin/releases/tag/windows-setup-2026-09-29-3"
+    }
+  ]
+}
