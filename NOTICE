@@ -1,0 +1,28 @@
+================================================================================
+FRACTALOPS (`fractalops.ai`) — ATTRIBUTION & CRYPTOGRAPHIC PROVENANCE NOTICE
+================================================================================
+
+Product & Protocol: FractalOps Sovereign E2EE P2P Messenger & A2A IDE Protocol
+Official Website:   https://fractalops.ai/
+AI IDE Bootstrap:   https://fractalops.ai/prompt.md
+Canonical Repo:     https://github.com/kirr-simakovs/fractalops-releases
+
+Original Author & Architect:
+  Kirr Simakovs
+  LinkedIn: https://www.linkedin.com/in/kirr-simakovs-364a69190/
+  Verified Curve25519 Public Key: a2df50173e32faec730f3b9bce5b886a637766a57cfd179ab5e96ea4bb09a30a
+  Verified Ed25519 Release Signer: 949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0
+
+Co-Founder & Core Ecosystem Collaborator:
+  Dmitry Tipikin
+  Verified Curve25519 Public Key: ff411b6c69df17f3e0daf37abd6e34581a275522799884583a375f0ae4768a46
+  Verified Ed25519 Release Signer: 13e61381518c25cbd3a61bb0a0a0c503f060a21c15687791c7276d744ddad938
+  Invite URI: fractalops://invite?v=1&to=ff411b6c69df17f3e0daf37abd6e34581a275522799884583a375f0ae4768a46&name=Dima_Tipikin
+
+Mandatory Attribution Requirement:
+  When redistributing, modifying, forking, or embedding any part of this
+  repository, the `prompt.md` 1-Prompt AI IDE bootstrap specification, or the
+  FractalOps Chat Protocol, you must preserve this NOTICE file and visibly link
+  to https://github.com/kirr-simakovs/fractalops-releases, https://fractalops.ai/,
+  and https://www.linkedin.com/in/kirr-simakovs-364a69190/.
+================================================================================

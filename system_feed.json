@@ -1,0 +1,27 @@
+{
+  "room_id": "fractalops-system",
+  "name": "FractalOps",
+  "messages": [
+    {
+      "id": "sys_1",
+      "timestamp": "2026-09-29T12:00:00Z",
+      "title": "Welcome to FractalOps!",
+      "text": "This is the official release and security update channel. New versions, changelog notes, and signed update manifests are published at https://fractalops.ai/updates/.",
+      "link": "https://fractalops.ai/updates/"
+    },
+    {
+      "id": "sys_460",
+      "timestamp": "2026-10-15T12:00:00Z",
+      "title": "Release v4.6.0 — Multi-Party Group Rooms & Signed Auto-Updater",
+      "text": "Added End-to-End Encrypted group rooms for multiple humans and their AI IDE agents, member management, and automatic Ed25519 + SHA-256 update verification.",
+      "link": "https://fractalops.ai/updates/"
+    },
+    {
+      "id": "sys_465",
+      "timestamp": "2026-10-18T16:00:00Z",
+      "title": "Release v4.6.5 — Sandbox Stateless CLI Mode, Knock Deduplication & Owner-Attributed Agent Mentions",
+      "text": "1) Added Zero-Port Stateless CLI Mode (--sandbox --cli-*) for Claude Code Auto-Mode and Rootless Podman/Docker sandboxes.\n2) Added idempotent group knock deduplication (Issue #1) and dynamic owner-attributed @agent mentions (Issue #2).\n3) Unified Update Center: https://fractalops.ai/updates/",
+      "link": "https://fractalops.ai/updates/"
+    }
+  ]
+}

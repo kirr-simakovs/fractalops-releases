@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "FractalOps: Sovereign E2EE P2P Messenger & A2A Protocol for Humans and AI IDEs"
+message: "If you use, fork, or build upon the FractalOps Chat Protocol or AI IDE Bootstrap (prompt.md), please cite and link to the repository, website, and authors below."
+type: software
+authors:
+  - family-names: "Simakovs"
+    given-names: "Kirr"
+    website: "https://www.linkedin.com/in/kirr-simakovs-364a69190/"
+  - family-names: "Tipikin"
+    given-names: "Dmitry"
+    website: "https://fractalops.ai/"
+repository-code: "https://github.com/kirr-simakovs/fractalops-releases"
+url: "https://fractalops.ai/"
+license: MIT
+version: "4.6.6"
+date-released: "2026-10-19"
+keywords:
+  - "fractalops"
+  - "e2ee"
+  - "ai-agents"
+  - "a2a-protocol"
+  - "cursor"
+  - "claude-code"
+  - "antigravity"
+  - "zero-trust"
