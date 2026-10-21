@@ -1,0 +1,55 @@
+{
+  "version": "4.7.0",
+  "released_at": "2026-10-21T16:40:00Z",
+  "auto_update_default": "opt_in_disabled_by_default",
+  "signature_scheme": "FRACTALOPS-RELEASE-SIG-v2",
+  "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "signature": "2ac475015af0a7cde8baf45fb34577f8f7db6ebe9aeaccdeb070b09fd15486064c2415b830d35025ca6c01edbe2129bf0a49e5500ac9bbb5335e4e34dd2d6001",
+  "signature_v1_compat": "afcd803a4de336cf5246f281cf741d59e786954fe5c8b48df019b7006897c50b5f4a26f7634f26b874ea1e17abb65e50b5810eaeb90d8961e20aaf41ea4e5302",
+  "signer_v1_compat_pubkey": "a2df50173e32faec730f3b9bce5b886a637766a57cfd179ab5e96ea4bb09a30a",
+  "forbidden_bundle_files": [
+    ".cursorrules",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "agent.md",
+    "ai_config.json",
+    "ai_key.secret",
+    "api_token",
+    "boot.py",
+    "bridge.token",
+    "display_name.txt",
+    "ed25519.priv",
+    "fractalops.db",
+    "fractalops_v4.db",
+    "paths.py",
+    "prompt.md",
+    "updater.py"
+  ],
+  "sha256": "8fc52b689a62a477e4cba1cbd6a24e99c932326f7b99761332c65c1ac05f5925",
+  "bundle_url": "https://raw.githubusercontent.com/kirr-simakovs/fractalops-releases/main/releases/macos_bundle_v470.zip",
+  "fallback_url": "https://fractalops.ai/updates/macos_bundle_v470.zip",
+  "macos": {
+    "version": "4.7.0",
+    "sha256": "8fc52b689a62a477e4cba1cbd6a24e99c932326f7b99761332c65c1ac05f5925",
+    "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+    "signature": "2ac475015af0a7cde8baf45fb34577f8f7db6ebe9aeaccdeb070b09fd15486064c2415b830d35025ca6c01edbe2129bf0a49e5500ac9bbb5335e4e34dd2d6001",
+    "signature_scheme": "FRACTALOPS-RELEASE-SIG-v2",
+    "signature_v1_compat": "afcd803a4de336cf5246f281cf741d59e786954fe5c8b48df019b7006897c50b5f4a26f7634f26b874ea1e17abb65e50b5810eaeb90d8961e20aaf41ea4e5302",
+    "signer_v1_compat_pubkey": "a2df50173e32faec730f3b9bce5b886a637766a57cfd179ab5e96ea4bb09a30a",
+    "bundle_url": "https://raw.githubusercontent.com/kirr-simakovs/fractalops-releases/main/releases/macos_bundle_v470.zip",
+    "fallback_url": "https://fractalops.ai/updates/macos_bundle_v470.zip"
+  },
+  "source_files": {
+    "src/p2p_crypto_daemon.py": "ebff9338f0f2408d6ac49f4abb2cba9ce13b2d92a56e5a5ca955b6b529863784",
+    "src/chat.html": "0bef29fd5e9346fa2cb30bf54ed27a951aa0196f2774ad9ed7626c4e561a2604",
+    "tests/test_fractalops_mac_v4_security.py": "fd5a9ba4c7276711c03c4b5de8952f62c0122a26c93f6836855c14d43a041c54"
+  },
+  "relay_tls_pinning": {
+    "relay_url": "https://45.77.66.95",
+    "transport_mode": "E2EE_STORE_AND_FORWARD_RELAY_PINNED_TLS",
+    "pinned_leaf_cert_sha256": "ef238eb8b3d08e6dc6d92e313eab4775c78d26f2b30ff06c057ce0bcc7e2ce27",
+    "adapter": "PinnedRelayHTTPAdapter (urllib3 assert_fingerprint)"
+  },
+  "test_suite": "30/30 PASSED"
+}
