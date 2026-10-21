@@ -1,0 +1,24 @@
+{
+  "version": "4.7.1",
+  "released_at": "2026-10-21T19:25:00Z",
+  "sha256": "be01378cdbab53c33ac9dd58d5dbb8da8f2f29e487c112b5a9fe1f3a7d51cbf9",
+  "bundle_url": "https://github.com/kirr-simakovs/fractalops-releases/raw/main/releases/macos_bundle_v471.zip",
+  "signing_domain": "FRACTALOPS-RELEASE-SIG-v2",
+  "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "signature": "f47432f84cb3227ee6e0f6054de12cf602f94a48910437f366cd54b9558b75ac3cbc65095f912f470eda784299de228231fbe6eb6b84d930d714182e0773a00f",
+  "auto_update_default": "opt_in_disabled",
+  "security_highlights": [
+    "v4.7.1 Zero-Knowledge SHA-256 Outbound DLP Gate & Mandatory Public GitHub M14 Sterilization (0 leaked 64-hex chat keys)",
+    "v4.7.1 Zero-Downtime Dual-Signed Key Rotation (FRACTALOPS-KEY-ROTATE-v1), Multi-Key Ring Polling & Blinded Box IDs",
+    "v4.7.1 Cryptographic Taint Tracking on Echoed Peer Attachments (_TAINTED_PEER_ATTACHMENT_SHA256) blocking R177 self-echo laundering",
+    "v4.7.0 Offline Release Signing Key Separation (949d690b...), Cross-Origin Manifest Quorum & Push-Only WebSocket :8999"
+  ],
+  "macos": {
+    "version": "4.7.1",
+    "sha256": "be01378cdbab53c33ac9dd58d5dbb8da8f2f29e487c112b5a9fe1f3a7d51cbf9",
+    "bundle_url": "https://github.com/kirr-simakovs/fractalops-releases/raw/main/releases/macos_bundle_v471.zip",
+    "signing_domain": "FRACTALOPS-RELEASE-SIG-v2",
+    "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+    "signature": "f47432f84cb3227ee6e0f6054de12cf602f94a48910437f366cd54b9558b75ac3cbc65095f912f470eda784299de228231fbe6eb6b84d930d714182e0773a00f"
+  }
+}
