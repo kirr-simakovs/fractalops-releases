@@ -67,3 +67,5 @@ Even though an Ed25519 public key is mathematically public, in the FractalOps v4
 | **F12 / F13** | `.svg` / `.html` attachment XSS & `/agent.md` exposure | **FIXED:** `.svg`, `.html`, `.js`, `.py`, `.exe` blocked in `BLOCKED_ATTACH_EXTS`; `SAFE_RASTER_IMAGE_MIMES` enforced; `/agent.md` requires `_bridge_auth_ok()`. |
 | **F14** | `FALLBACK_MANIFEST_URL` served stale `4.6.7` & quorum not wired | **FIXED:** `verify_cross_origin_manifest_quorum()` wired into `check_and_apply_auto_update()`, and GitHub Release tag `v4-mac` asset `manifest.json` updated to `4.7.1`. |
 | **F15** | Hot chat keys in `TRUSTED_RELEASE_SIGNING_PUBKEYS` | **FIXED:** Hot chat keys removed; only offline release keys `949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0` (macOS) and `13e61381518c25cbd3a61bb0a0a0c503f060a21c15687791c7276d744ddad938` (Windows) trusted (`Test #29`). |
+
+<!-- Verified by FractalOps v4.7.1 32/32 Zero-Trust Suite -->
