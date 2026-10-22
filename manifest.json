@@ -1,0 +1,192 @@
+{
+  "version": "4.7.3",
+  "bundle_url": "https://raw.githubusercontent.com/kirr-simakovs/fractalops-releases/main/releases/macos_bundle_v473.zip",
+  "bundle_sha256": "5965c2509523ef8ad4773f1bd5efb2ea48ea8b1133fbe22760d598e21ee6df55",
+  "release_signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "release_signature": "8ffdd7e60fdbc8987e33e099a8b7afe5abdd3230ee262fed17901fbb0459b0f2086664f1cbdc4d92d52c19569003880b5feec8ac156e7c0f79d24ea40a5a6902",
+  "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "signature": "8ffdd7e60fdbc8987e33e099a8b7afe5abdd3230ee262fed17901fbb0459b0f2086664f1cbdc4d92d52c19569003880b5feec8ac156e7c0f79d24ea40a5a6902",
+  "agent_md_sha256": "71a9ea2ad9f02c4b0285775cef84236c66e278d20a5a37221becb2b4fc7b8035",
+  "agent_md_release_signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "agent_md_release_signature": "9135a572c7adce415796a212dce997c735c2d1209d0d3dd31fb865642cf6f9f62b8fbd6504b9c3751b1c622ad4e3f68c46e80b07f56be5c3410141b7e09b2608",
+  "agent_md_signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "agent_md_signature": "9135a572c7adce415796a212dce997c735c2d1209d0d3dd31fb865642cf6f9f62b8fbd6504b9c3751b1c622ad4e3f68c46e80b07f56be5c3410141b7e09b2608",
+  "key_rotation_statement": {
+    "domain": "FRACTALOPS-KEY-ROTATE-v1",
+    "old_signer_pubkey": "a2df5017...bb09a30a",
+    "old_signer_pubkey_sha256": "bfa65e32a9f78faa6112f942703f3090cce0f24063ca8155ed938edbc7efbccb",
+    "new_release_signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+    "effective_from_version": "4.6.9",
+    "statement": "Delegate FractalOps macOS release and agent.md signing from legacy v4.6.5 key (a2df5017...) to dedicated offline Ed25519 release signing key (949d690b...) effective v4.6.9+.",
+    "old_signer_signature": "0d41e7514efb39d487e54b7a5bb16c8ce7db1e6c148bcc132c6030853c2943de2c935697eed7ea4ed767bce6dfae88faf76988cdd53744dc674abdca2bbe7f02",
+    "new_signer_countersignature": "36608f7725695b1fc28b388e8da130ea00e86e362fbeacc6438366e2c644cf1767e841620398666f79ceb1bb4c543e93a46f18b7083c81ce197a0d110d2d4b01",
+    "new_signer_public_attestation_signature": "5d373af8199ce2092daaa1d9c351bcc7e3caf868e8ef1f15e28782bbb17632d42930a6f43f0aa25e8ec52e55d18915fd484a591a213c009bd4dde0c1ad2a7d0e"
+  },
+  "macos": {
+    "version": "4.7.3",
+    "url": "https://raw.githubusercontent.com/kirr-simakovs/fractalops-releases/main/releases/macos_bundle_v473.zip",
+    "sha256": "5965c2509523ef8ad4773f1bd5efb2ea48ea8b1133fbe22760d598e21ee6df55",
+    "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+    "signature": "8ffdd7e60fdbc8987e33e099a8b7afe5abdd3230ee262fed17901fbb0459b0f2086664f1cbdc4d92d52c19569003880b5feec8ac156e7c0f79d24ea40a5a6902"
+  },
+  "linux": {
+    "version": "4.7.3",
+    "url": "https://raw.githubusercontent.com/kirr-simakovs/fractalops-releases/main/releases/macos_bundle_v473.zip",
+    "sha256": "5965c2509523ef8ad4773f1bd5efb2ea48ea8b1133fbe22760d598e21ee6df55",
+    "signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+    "signature": "8ffdd7e60fdbc8987e33e099a8b7afe5abdd3230ee262fed17901fbb0459b0f2086664f1cbdc4d92d52c19569003880b5feec8ac156e7c0f79d24ea40a5a6902"
+  },
+  "changelog_en": [
+    {
+      "version": "4.7.3",
+      "date": "2026-10-22",
+      "title": "Grok-Bot-Style Blind Secret Vault ({{secret:NAME}}), Content-Filter Sandbox Diagnostics, Retired Key Auto-Migration & A2A Agent Card",
+      "highlights": [
+        "Added Zero-Knowledge Blind Secret Vault (POST /api/secrets/set, POST /api/secrets/send, GET /api/secrets/list, POST /api/secrets/inject-file, POST /api/secrets/proxy-http, POST /api/secrets/reveal) so humans can share and configure API keys and passwords via opaque {{secret:NAME}} handles without AI agents ever seeing plaintext values.",
+        "Added automatic inline secret scrubber (VAULT-04) that detects accidental API keys (sk-..., ghp_..., github_pat_..., xoxb-..., AIza..., AKIA...) and replaces them with {{secret:AUTO_<hash>}} in agent-facing views and outbound agent messages.",
+        "Added deterministic JEV Content-Filter Sandbox Diagnostics (POST /api/jev/evaluate & jev_filter_audit receipts), retired desktop key auto-migration (5aec3c82... -> a2df5017...), and standard a2a-protocol.org Agent Card discovery (GET /.well-known/agent.json & GET /api/a2a/agent-card)."
+      ]
+    },
+    {
+      "version": "4.7.2",
+      "date": "2026-10-22",
+      "title": "GitHub Issue #11 Fix: openRoom() inputEl DOM Fix, Headless Node.js DOM Smoke Gate & Dual-Signed Key-Rotation Attestation",
+      "highlights": [
+        "Fixed ReferenceError: inputEl is not defined in chat.html openRoom() when switching or loading rooms, and added an automated headless Node.js DOM smoke test to the release build pipeline.",
+        "Aligned APP_VERSION and manifest.json version strings and published dual-signed FRACTALOPS-KEY-ROTATE-v1 key-rotation attestation (KEY_ROTATION_ATTESTATION.json) for seamless 4.6.5 upgrades."
+      ]
+    },
+    {
+      "version": "4.7.1",
+      "date": "2026-10-21",
+      "title": "Public GitHub M14 Sterilization Gate, Dual-Signed Key Rotation & Multi-Keyring Polling, Peer Attachment Taint Tracking & v4-mac Release Asset Parity",
+      "highlights": [
+        "Added sterilize_public_github_text() and zero-knowledge SHA-256 Outbound DLP Gate (OUTBOUND_DLP_FORBIDDEN_TOKEN_SHA256) so full 64-hex chat identity keys, internal tokens, and private room IDs are never exposed in public issues, PRs, or source files.",
+        "Added rotate_chat_identity_key(), verify_and_apply_key_rotation() (FRACTALOPS-KEY-ROTATE-v1), multi-keyring polling (get_all_local_signing_keys()), and derive_blinded_box_id() for zero-downtime key migration.",
+        "Added cryptographic taint tracking (_TAINTED_PEER_ATTACHMENT_SHA256) blocking self-echoed peer attachments (R177 laundering defense) and required bridge.token auth on GET /agent.md."
+      ]
+    },
+    {
+      "version": "4.7.0",
+      "date": "2026-10-21",
+      "title": "Bisqet Follow-Up Audit (rowid=215/216) & Oct 21 Incident Post-Mortem Hardening: Outbound DLP Gate, Push-Only Authenticated WS, Quorum Wire-Up & Delta Cursor Polling",
+      "highlights": [
+        "Wired verify_cross_origin_manifest_quorum() directly into check_and_apply_auto_update() requiring 2 independent origins, and separated offline release signers (949d690b..., 13e61381...) from hot chat identity keys.",
+        "Locked WebSocket :8999 to push-only with mandatory api_token / bridge.token verification and strict http://127.0.0.1:8770 origin allowlist (disallowing empty, null, and file:// origins).",
+        "Enforced SELF_AGENT provenance (never granting SELF_HUMAN to role=='agent' and never re-enqueueing SELF_AGENT into ide_bridge_inbox.jsonl), empty recommended_skills=[] for non-SELF_HUMAN envelopes, and stripped duplicate '🤖 [...]:' prefixes.",
+        "Added Outbound DLP Gate (_enforce_outbound_dlp_gate) blocking accidental cross-room leaks of internal workspace tokens and upgraded poll_vultr_once() with Cursor Delta Polling (?after_id= & If-None-Match) + O(1) pre-decrypt deduplication."
+      ]
+    },
+    {
+      "version": "4.6.9",
+      "date": "2026-10-19",
+      "title": "Code-vs-Claims Audit Hardening: Opt-In Auto-Update, agent.md Bundle Ban, Pre-Tool Firewall, Cross-Origin Quorum & 2x Ultrafast Voice",
+      "highlights": [
+        "Auto-update is now strictly OPT-IN (AUTO_UPDATE_ENABLED=False by default) and verifies domain-separated Ed25519 release signatures (FRACTALOPS-RELEASE-SIG-v2), anti-rollback semver checks, and cross-origin manifest quorum.",
+        "Hard-banned agent.md, prompt.md, .cursorrules, CLAUDE.md, GEMINI.md, and AGENTS.md from update bundles and added verify_agent_md_bytes() over signed manifest agent_md_sha256.",
+        "Enforced pre-tool deterministic Python firewall in enqueue_ide_bridge_message with Unicode NFKC normalization, C0/C1/ZW stripping, attachment base64 stripping, and locked recommended_skills against peer steering.",
+        "Enforced strict X-FractalOps-Token / X-Bridge-Token authentication on IDE bridge endpoints, removed file:// and null origin bypasses, and added ciphertext SHA-256 replay deduplication."
+      ]
+    },
+    {
+      "version": "4.6.8",
+      "date": "2026-10-18",
+      "title": "Active Relay TLS Leaf-Certificate Pinning (PinnedRelayHTTPAdapter), Reproducible Builds & Red-Team Quarantine",
+      "highlights": [
+        "Implemented active SHA-256 TLS leaf-certificate pinning on every relay connection via PinnedRelayHTTPAdapter.",
+        "Published unminified source code, deterministic reproducible macos_bundle_v468.zip, and 26-test security verification suite to kirr-simakovs/fractalops-releases."
+      ]
+    },
+    {
+      "version": "4.6.7",
+      "date": "2026-10-18",
+      "title": "x.ai/bot & grok-bot Synthesis: Quick Routines Bar, JEV Read/Write Gate, fractalops://skill & Multi-Agent Consensus",
+      "highlights": [
+        "Added 1-click Read-Only Quick Routines Bar ('Status Without a Call', 'CISO Check', 'Test Summary', 'Thread Handover') and Multi-Agent Consensus chips (propose / back / object) above the composer.",
+        "Added daemon-computed JEV System-One Intent Gate (classify_agent_intent_jev) with server-authoritative badges (🟢 Read-Only, 🟠 Write-Gate, 🛡️ Blocked) and ::approval_request:: marker stripping.",
+        "Added hardened fractalops://skill?v=1 URI parser with Unicode bidi/control-char rejection, duplicate query-key rejection, and imported:<slug>:<sha8> namespacing.",
+        "Added Ed25519-signed offline-ready room status snapshot (generate_signed_status_snapshot) with zero external path leakage."
+      ]
+    },
+    {
+      "version": "4.6.6",
+      "date": "2026-10-18",
+      "title": "Membership State UI/UX Guard, Knock Idempotency (#1), @Mention Owner Resolution (#2) & Isolated Chat Spaces",
+      "highlights": [
+        "Added explicit membership_state ('active', 'pending_approval', 'declined', 'kicked') with top feed status banners and disabled composer until creator accepts hello.",
+        "Fixed GitHub Issue #1 (by andrey-golovko): deduplicated relay box msg_ids (processed_box_ids), prevented group knocks from reopening after Accept/Decline, and made decide_hello idempotent.",
+        "Fixed GitHub Issue #2 (by andrey-golovko): removed hardcoded peer agents in @mention popup and resolved each room agent's human owner by pubkey.",
+        "Added automatic bi-directional binding between E2EE rooms and AI IDE chats (#ag:project_workspace) with isolated per-room workspace sync."
+      ]
+    },
+    {
+      "version": "4.6.5",
+      "date": "2026-10-17",
+      "title": "IDE / Swarm Left-Rail Tab, Multi-Chat Swarm Orchestrator & Non-Blocking E2EE Send",
+      "highlights": [
+        "Added 4th left-rail folder tab (💻 IDE / Swarm) displaying all connected AI IDE project chats (#ag:...) with 1-click project room creation.",
+        "Added Multi-Chat Swarm Orchestrator (POST /api/ide-swarm/dispatch) for parallel multi-chat execution and cross-chat context synthesis.",
+        "Upgraded E2EE send pipeline to non-blocking async fan-out (<150ms TRIZ join) with 3.5s outgoing and 5.0s incoming deduplication.",
+        "Fixed bound IDE project room routing so messages in #ag:... rooms automatically enqueue to ide_bridge_inbox.jsonl."
+      ]
+    },
+    {
+      "version": "4.6.4",
+      "date": "2026-10-16",
+      "title": "3-Tier Trust Firewall, IDE Execution Envelope v2.0 & Signed Auto-Update",
+      "highlights": [
+        "Added ide_execution_envelope v2.0 with 3-tier trust classification (SELF_HUMAN, VERIFIED_PEER, UNTRUSTED_EXTERNAL) and automatic skill routing.",
+        "Added multi-chat #ag:<slug> discovery and cross-room context bridging."
+      ]
+    },
+    {
+      "version": "4.6.3",
+      "date": "2026-10-16",
+      "title": "AI IDE Multi-Chat Bridge (#ag:...), Technical Chat Hub & English Release Notes",
+      "highlights": [
+        "Added # autocomplete for AI IDE / AI IDE workspace chats (#ag:<chat_id>) and cross-room #Room context linking.",
+        "Added ability to bind human/group E2EE rooms directly to dedicated AI IDE project chats (GET/POST /api/ide-chats).",
+        "Added interactive Technical Chat hub banner explaining local AI IDE control, update logs, and zero-network privacy.",
+        "Added built-in English Release Notes & Changelog viewer inside the Updates modal with update notification badge."
+      ]
+    },
+    {
+      "version": "4.6.2",
+      "date": "2026-10-16",
+      "title": "Scroll Stability (Zero Scroll-Hijacking), E2EE Delivery Receipts & Auto-Update Inspector",
+      "highlights": [
+        "Fixed feed scroll jumping on background polling via idempotent DOM signature (computeFeedSig) and floating 'New Messages' button.",
+        "Added per-message E2EE delivery badges (✓ P2P queued in Vultr box, ✓✓ P2P confirmed by peer reply) and per-room delivery table.",
+        "Added visual distinction between Human and AI Agent message bubbles (blue border & 🤖 badge) and single-line header/sidebar layout."
+      ]
+    },
+    {
+      "version": "4.6.1",
+      "date": "2026-10-16",
+      "title": "Multimodal Attachments (Cmd+V / Paperclip / Drag & Drop), Day Dividers & @/# Autocomplete",
+      "highlights": [
+        "Implemented full cross-platform attachment wire compatibility (::attach <mime> <name>::) with JPEG auto-compression (<=180 KB) and 600 KB file support.",
+        "Added chronological day dividers (📅 DD Month YYYY) and full DD.MM HH:MM message timestamps.",
+        "Added @mention (@agy, room members) and #tag autocomplete popup with keyboard navigation."
+      ]
+    },
+    {
+      "version": "4.6.0",
+      "date": "2026-10-15",
+      "title": "Ed25519 Signed Hot-Bundle Auto-Updater & Full Telegram-Style Group Lifecycle",
+      "highlights": [
+        "Implemented 4-point Zero-Trust Auto-Updater (2 MB cap, SHA-256 verification, Ed25519 signature check against pinned keys, path-traversal defense).",
+        "Added complete group chat lifecycle: group creation, member add/remove, group rename (group_rename), leave (group_leave), and creator delete (group_delete)."
+      ]
+    },
+    {
+      "version": "4.5.0",
+      "date": "2026-10-13",
+      "title": "Clean First Run, macOS Keychain Vault & Curve25519 E2EE Relay Compatibility",
+      "highlights": [
+        "Clean First Run architecture with local 64-hex Ed25519 key generation and fractalops://invite Magic Links.",
+        "Migrated private keys and AI Router API keys into macOS Keychain (security -i) with strict localhost capability token protection."
+      ]
+    }
+  ]
+}
