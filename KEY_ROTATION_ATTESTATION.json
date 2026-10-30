@@ -1,0 +1,11 @@
+{
+  "domain": "FRACTALOPS-KEY-ROTATE-v1",
+  "old_signer_pubkey": "<legacy-v465-signer-pubkey>",
+  "old_signer_pubkey_sha256": "bfa65e32a9f78faa6112f942703f3090cce0f24063ca8155ed938edbc7efbccb",
+  "new_release_signer_pubkey": "949d690b1f9899d04f78cfd33ea3b6537eb5a401fc0326136f4b0b9591e5c0d0",
+  "effective_from_version": "4.6.9",
+  "statement": "Delegate FractalOps macOS release and agent.md signing from legacy v4.6.5 key (<legacy-v465-signer-pubkey>) to dedicated offline Ed25519 release signing key (949d690b...) effective v4.6.9+.",
+  "old_signer_signature": "0d41e7514efb39d487e54b7a5bb16c8ce7db1e6c148bcc132c6030853c2943de2c935697eed7ea4ed767bce6dfae88faf76988cdd53744dc674abdca2bbe7f02",
+  "new_signer_countersignature": "1af45f18a6126574b35feea7054166bff28df20cf2799f114dcfe88f9e018c4c45fee1377eb4162c3b2bb242e7a0752bb01a8e50818b13649d9d1dab21449606",
+  "new_signer_public_attestation_signature": "1af45f18a6126574b35feea7054166bff28df20cf2799f114dcfe88f9e018c4c45fee1377eb4162c3b2bb242e7a0752bb01a8e50818b13649d9d1dab21449606"
+}
