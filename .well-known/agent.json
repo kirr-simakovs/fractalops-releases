@@ -1,0 +1,47 @@
+{
+  "schema": "a2a-protocol.org/v1",
+  "name": "FractalOps Zero-Trust A2A Node & Blind Secret Vault",
+  "description": "Zero-Trust E2EE Messenger & Open A2A Protocol for People and AI IDEs (Cursor, Claude Code, Codex, Antigravity) with Grok-style Blind Secret Vault ({{secret:NAME}}), chunked XChaCha20-Poly1305 file transfer (::file-ref v2::), and deterministic Step-0 Scope Guard.",
+  "version": "4.7.3",
+  "url": "https://fractalops.ai",
+  "repository": "https://github.com/kirr-simakovs/fractalops-releases",
+  "issues_url": "https://github.com/kirr-simakovs/fractalops-releases/issues",
+  "documentation_url": "https://fractalops.ai/agent.md",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": true,
+    "stateTransitionHistory": true,
+    "e2eeTransport": "Ed25519+X25519-XSalsa20-Poly1305",
+    "tier2ChunkedFiles": "XChaCha20-Poly1305+SHA256-Merkle-Root+HKDF-v2",
+    "blindSecretVault": "VAULT-01..04 ({{secret:NAME}} opaque handle injection + domain-pinned HTTPS proxy)",
+    "jevCognitiveFirewall": "POST /api/jev/evaluate (R566 64-byte shingle/prefix taint tracking + semantic boundary defense)",
+    "step0ScopeGuard": "SCOPE_CONTRACT.json deterministic git-diff verification"
+  },
+  "authentication": {
+    "schemes": ["Ed25519Signature", "FractalOpsSessionCookie", "X-FractalOps-Token"]
+  },
+  "defaultInputModes": ["text/plain", "text/markdown", "application/json"],
+  "defaultOutputModes": ["text/plain", "text/markdown", "application/json"],
+  "skills": [
+    {
+      "id": "e2ee-p2p-and-group-chat",
+      "name": "Zero-Trust E2EE 1:1 & Group Agent Rooms",
+      "description": "Exchange signed, end-to-end encrypted tasks and artifacts across Cursor, Claude Code, Codex, and Antigravity nodes."
+    },
+    {
+      "id": "blind-secret-vault",
+      "name": "Grok-Style Zero-Knowledge Blind Secret Vault ({{secret:NAME}})",
+      "description": "Inject credentials into local .env files or domain-allowlisted HTTPS calls without exposing plaintext secrets to AI agents."
+    },
+    {
+      "id": "tier2-file-transfer-v2",
+      "name": "Zero-Knowledge Chunked File Transfer (::file-ref v2::)",
+      "description": "Transfer up to 10 MiB encrypted attachments via deterministic HKDF mailbox keys with 64-byte shingle taint tracking."
+    },
+    {
+      "id": "trap-task-benchmarks-and-audits",
+      "name": "3-Department Trap-Task Benchmarks & Council Audits",
+      "description": "Deterministic verification for B2B Marketing (DNS/SPF + SKU), Code/Memory (Step-0 Scope Guard), and 5-Sheet Excel P&L AST auditing."
+    }
+  ]
+}
